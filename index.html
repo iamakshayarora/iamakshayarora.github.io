@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akshay Arora - Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#sidebar" data-bs-offset="50">
+  <!-- Hamburger Menu Button -->
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+  </button>
+
+  <!-- Sidebar -->
+  <nav id="sidebar" class="col-md-3 col-lg-2 bg-dark sidebar collapse">
+    <div class="sidebar-sticky pt-3">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#home"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about"><i class="fas fa-user"></i> About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills"><i class="fas fa-chart-line"></i> Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects"><i class="fas fa-folder"></i> Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#certifications"><i class="fas fa-certificate"></i> Certifications</a>
+        </li>
+  <!--         <li class="nav-item">
+          <a class="nav-link" href="#hobbies"><i class="fas fa-futbol"></i> Hobbies</a>
+        </li>-->
+        <li class="nav-item">
+          <a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="assets/resume.pdf" target="_blank"><i class="fas fa-eye"></i> View Resume</a>
+        </li>
+      </ul>
+      <div class="social-links mt-3 text-center">
+        <p style="color: #8462a9;"> Connect with Me!</p>
+        <a href="https://github.com/iamakshayarora" target="_blank" class="text-light mx-2"><i class="fab fa-github" style="color: #8462a9;"></i></a>
+        <a href="https://linkedin.com/in/akshay-arora-1016a7189/" target="_blank" class="text-light mx-2"><i class="fab fa-linkedin" style="color: #8462a9;"></i></a>
+        <a href="https://instagram.com/iamakshayarora/" target="_blank" class="text-light mx-2"><i class="fab fa-instagram" style="color: #8462a9;"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 main-content">
+    <section id="home" class="section">
+        <div class="text-content">
+            <h1 style="font-size: 3rem;">Akshay Arora</h1>
+            <p>A data enthusiast with a passion for turning problems into solutions.</p>
+            <a href="assets/resume.pdf" target="_blank" class="btn btn-primary mt-3"><i class="fas fa-eye"></i> View Resume</a>
+        </div>
+      <img src="assets/photo.jpg" alt="Your Photo" class="img-fluid rounded profile-photo">
+    </section>
+
+    <section id="about" class="section">
+      <h1>About Me</h1>
+      <p>Hi, I'm Akshay Arora, currently a <strong>M.Sc.Computer Science - Data Science</strong> student at Trinity College Dublin. I have more than 4 years of professional experience in analyzing and managing data/processes for a tech consulting firm. 
+        I am deeply passionate about technology and innovation to transform business processes and deliver measurable impact. My academic and professional background has equipped me with the analytical, numerical, and critical thinking skills to carry out this type of work and all of my experiences have equipped me with a keen ability to translate complex technical findings into clear, actionable insights for stakeholders across the organisation. </p>
+    </section>
+
+    <section id="skills" class="section">
+      <h1>Skills</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Technical Skills</h3>
+          <canvas id="skillsChart" width="400" height="400"></canvas>
+        </div>
+        <div class="col-md-6">
+          <h3>Soft Skills</h3>
+          <ul>
+            <li>Problem-Solving <span class="badge bg-success">Advanced</span></li>
+            <li>Team Collaboration <span class="badge bg-success">Advanced</span></li>
+            <li>Communication <span class="badge bg-success">Proficient</span></li>
+            <li>Project Management <span class="badge bg-success">Intermediate</span></li>
+            <li>Team Management <span class="badge bg-success">Intermediate</span></li>
+            <li>Cost Management <span class="badge bg-success">Basic</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h1>Projects</h1>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <div class="card bg-dark text-light">
+            <div class="card-body">
+              <h5 class="card-title">Geographically Weighted Regression in R</h5>
+              <p class="card-text">Built many GWR models to Ireland's Air Quality Dataset using R for the MSc. Data Analytics Project</p>
+              <a href="https://github.com/iamakshayarora/DA_GWR" target="_blank" class="btn btn-primary">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="card bg-dark text-light">
+            <div class="card-body">
+              <h5 class="card-title">Solving Captchas using Tensorflow</h5>
+              <p class="card-text">Developed a classification model in python using Tensorflow to train and solve captchas.</p>
+              <a href="https://github.com/iamakshayarora/Captcha-Solving-using-Tensorflow" target="_blank" class="btn btn-primary">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="card bg-dark text-light">
+            <div class="card-body">
+              <h5 class="card-title">GPT to Generate Melodies</h5>
+              <p class="card-text">Created a GPT Model to generate melodies as part of my MSc Machine Learning Module</p>
+              <a href="https://github.com/iamakshayarora/Melody-GPT-Generation" target="_blank" class="btn btn-primary">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+      <div class="col-md-6 mb-3">
+        <div class="card bg-dark text-light">
+          <div class="card-body">
+            <h5 class="card-title">Tableau Visualisation for Football</h5>
+            <p class="card-text">Created a dashboard in Tableau to showcase various aspects of Men's International Football Statistics</p>
+            <a href="https://github.com/iamakshayarora/Mens-International-Football-Visualised" target="_blank" class="btn btn-primary">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section id="certifications" class="section">
+      <h1>Certifications</h1>
+      <ul>
+        <li><i class="fas fa-certificate"></i> AWS Certified Solutions Architect – Associate</li>
+        <li><i class="fas fa-certificate"></i> Semarchy xDM Development</li>
+      </ul>
+    </section>
+<!--
+    <section id="hobbies" class="section">
+      <h1>Hobbies</h1>
+      <p>I enjoy playing football, strategizing in Football Manager, and exploring data visualization techniques. Whether it's on the pitch or in a dataset, I love finding patterns and winning strategies!</p>
+    </section>
+-->
+    <section id="contact" class="section">
+      <h1>Contact</h1>
+      <form action="https://docs.google.com/forms/d/e/1FAIpQLSf7pw7yOzf5icm7nuPOqVN2QuoOuQK2HwrYqH6YwmYIcsYmvw/formResponse" method="POST">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" name="entry.620082074" placeholder="Your name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="entry.144043502" placeholder="Your email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" name="entry.1851265848" rows="3" placeholder="Your message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+      <br>
+      <p class="mt-3">Or simply send me an email: akshay34arora@gmail.com</p>
+      <a href="mailto:akshay34arora@gmail.com" class="btn btn-primary mt-3"><i class="fas fa-envelope"></i> Email Me</a>
+      <a href="https://github.com/iamakshayarora" target="_blank" class="btn btn-primary mt-3"><i class="fab fa-github"></i> My Github</a>
+      <a href="https://linkedin.com/in/akshay-arora-1016a7189/" target="_blank" class="btn btn-primary mt-3"><i class="fab fa-linkedin"></i> My Linkedin</a>
+      <a href="https://instagram.com/iamakshayarora/" target="_blank" class="btn btn-primary mt-3"><i class="fab fa-instagram"></i> My Instagram</a>
+    </section>
+  </main>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="btn btn-primary"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <!-- Chart.js for visualizations -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Custom JS -->
+  <script src="scripts.js"></script>
+</body>
+</html>
